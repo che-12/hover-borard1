@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: rgb(1, 12, 1);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+span{
+    /* background-color: blue; */
+    /* border: 2px solid white; */
+    position: relative;
+    width: 45px;
+    height:45px;
+    display: block;
+}
+span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: greenyellow;
+    transform: scale(0.1);
+    box-shadow: 0 0 10px greenyellow,
+    0 0 20px greenyellow,
+    0 0 40px greenyellow,
+    0 0 60px greenyellow,
+    0 0 80px greenyellow,
+    0 0 100px greenyellow;
+    border-radius: 50%;
+    /* pointer-events: none; */
+    transition: 1s;
+    /* animation: sayantan1 2s linear infinite; */
+}
+span:hover::before{
+    transform: scale(1);
+    transition: 0s;
+}
+/* @keyframes sayantan1{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+} */
+.sayantan{
+    color: greenyellow;
+    text-shadow:0 0 10px greenyellow,
+    0 0 30px greenyellow,
+    0 0 60px greenyellow,
+    0 0 90px greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+}
+/* .sayantan::before{
+    display: none;
+} */
