@@ -28,7 +28,7 @@ span::before{
     width: 100%;
     height: 100%;
     background: greenyellow;
-    transform: scale(0.1);
+    transform: scale(0);
     box-shadow: 0 0 10px greenyellow,
     0 0 20px greenyellow,
     0 0 40px greenyellow,
@@ -36,22 +36,22 @@ span::before{
     0 0 80px greenyellow,
     0 0 100px greenyellow;
     border-radius: 50%;
-    /* pointer-events: none; */
-    transition: 1s;
-    /* animation: sayantan1 2s linear infinite; */
+    pointer-events: none;
+    transition: 2s;
+    animation: sayantan1 5s linear infinite;
 }
 span:hover::before{
     transform: scale(1);
     transition: 0s;
 }
-/* @keyframes sayantan1{
+@keyframes sayantan1{
     0%{
         filter: hue-rotate(0deg);
     }
     100%{
         filter: hue-rotate(360deg);
     }
-} */
+}
 .sayantan{
     color: greenyellow;
     text-shadow:0 0 10px greenyellow,
@@ -63,6 +63,7 @@ span:hover::before{
     justify-content: center;
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 1.5rem;
+    animation: sayantan1 5s linear infinite;
 }
 /* .sayantan::before{
     display: none;
